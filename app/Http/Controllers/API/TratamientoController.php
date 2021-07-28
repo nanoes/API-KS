@@ -20,7 +20,7 @@ class TratamientoController extends Controller
     public function index()
     {
         //
-        $tratamientoList = Tratamiento::paginate(5);
+        $tratamientoList = Tratamiento::paginate(20);
         return response()->json($tratamientoList, 200);
     }
 
